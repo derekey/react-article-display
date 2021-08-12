@@ -8,6 +8,10 @@ image:
   repository: mysql
   tag: latest
   pullPolicy: IfNotPresent
+  env:
+    # Use secret in real usage
+  - name: MYSQL_ROOT_PASSWORD
+    value: root
 
 imagePullSecrets: []
 nameOverride: ""
